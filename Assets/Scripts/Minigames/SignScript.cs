@@ -9,11 +9,18 @@ public class SignScript : MonoBehaviour
     public float objective;
     Vector3 oldPos = Vector3.zero;
     bool writing;
+    public GameObject signatureSprite;
+    SpriteRenderer theRenderer;
 
     // Start is called before the first frame update
     void Start()
     {
-        
+        if (signatureSprite != null) {
+            theRenderer = signatureSprite.GetComponent<SpriteRenderer>();
+            theRenderer.color = new Color (1, 1, 1, 0); 
+        } else {
+            Debug.Log("No Signature attached !");
+        }
     }
 
     // Update is called once per frame
@@ -37,6 +44,7 @@ public class SignScript : MonoBehaviour
             } else {
                 float delta = Vector3.Distance(oldPos, newPos) / reduceFactor;
                 progress += delta;
+                theRenderer.color = new Color (1, 1, 1, progress/objective); 
                 //Debug.Log("Current : "+progress+"; delta : "+delta+"; objective : "+objective);
                 if (progress >= objective) {
                     Objective();
