@@ -11,6 +11,7 @@ public class SignScript : MonoBehaviour
     bool writing;
     public GameObject signatureSprite;
     SpriteRenderer theRenderer;
+    public MGManagerScript managerScript;
 
     // Start is called before the first frame update
     void Start()
@@ -57,5 +58,6 @@ public class SignScript : MonoBehaviour
 
     void Objective() {
         Debug.Log("Document signed !");
+        managerScript.NextGame();
     }
 }
