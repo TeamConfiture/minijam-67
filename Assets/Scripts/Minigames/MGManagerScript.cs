@@ -7,9 +7,7 @@ public class MGManagerScript : MonoBehaviour
 {
     
     public List<GameObject> minigames;
-
     public Text chronoText;
-
     
     private bool playing;
     private double chronoTime;
@@ -33,6 +31,7 @@ public class MGManagerScript : MonoBehaviour
     private void EndMiniGames() {
         minigames.FindAll(g => g.activeSelf).ForEach(g => g.SetActive(false));
         playing = false;
+        GameManager.Instance.Win(chronoTime);
     }
 
     // Start is called before the first frame update

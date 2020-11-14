@@ -5,6 +5,7 @@ using UnityEngine;
 public class GameManager : MonoBehaviour
 {
     public static GameManager Instance;
+    private double Chrono;
 
     void Awake()
     {
@@ -24,5 +25,11 @@ public class GameManager : MonoBehaviour
             Debug.Log("Quit");
             Application.Quit();
         }
+    }
+
+    public void Win(double chrono) {
+        Chrono = chrono;
+        UnityEngine.SceneManagement.SceneManager.LoadScene("WinScene");
+        Debug.Log("Game won with chrono : " + Chrono);
     }
 }
