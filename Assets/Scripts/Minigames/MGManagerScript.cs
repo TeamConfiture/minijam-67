@@ -16,7 +16,7 @@ public class MGManagerScript : MonoBehaviour
     public void NextGame() {
         currentGame++;
         // currentGame = currentGame % minigames.Count;
-        if(currentGame < minigames.Count - 1) {
+        if(currentGame < minigames.Count) {
             SetMiniGame(currentGame);
         } else {
             EndMiniGames();
@@ -42,6 +42,7 @@ public class MGManagerScript : MonoBehaviour
             Debug.LogError("No minigame found !");
             return;
         }
+        NextGame();
     }
 
     // Update is called once per frame
