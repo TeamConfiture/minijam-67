@@ -415,11 +415,11 @@ MonoBehaviour:
     m_HorizontalOverflow: 0
     m_VerticalOverflow: 0
     m_LineSpacing: 1
-  m_Text: "Programming: Lugrim, Calan\xF6n, DoctorTee, Jeanne, Metatheria, aypristyle\r\nGame
-    Design: Tonysan, Lugrim, Jeanne\nGraphics: Kimi, Catnip, Solok the Baguette Boy\r\nCutscene:
-    Tonysan\r\nMusic: strapontin, Bycob\r\nSound design: Tonysan\r\nVoice acting:
-    Kimi\r\nTranslation: Jeanne, Catnip, may, L'Autre, Elnath\r\nEmotional support:
-    Azryl Askanby, Laura l'alpaca, Scipi0, 1erRadiant, Zo, Jiji763\r"
+  m_Text: "Programming: Lugrim, Calan\xF6n, DoctorTee, Jeanne, Metatheria, aypristyle\r,
+    yyyyj\nGame Design: Tonysan, Lugrim, Jeanne\nGraphics: Kimi, Catnip, Solok the
+    Baguette Boy\r\nCutscene: Tonysan\r\nMusic: strapontin, Bycob\r\nSound design:
+    Tonysan\r\nVoice acting: Kimi\r\nTranslation: Jeanne, Catnip, may, L'Autre, Elnath\r\nEmotional
+    support: Azryl Askanby, Laura l'alpaca, Scipi0, 1erRadiant, Zo, Jiji763\r"
 --- !u!222 &132019349
 CanvasRenderer:
   m_ObjectHideFlags: 0
