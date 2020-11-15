@@ -8,13 +8,14 @@ public class EraseScript : MonoBehaviour
     float progress;
     public float objective;
     Vector3 oldPos = Vector3.zero;
-    bool writing;
+    bool writing, erased;
     //public GameObject signatureSprite;
     SpriteRenderer theRenderer;
 
     // Start is called before the first frame update
     void Start()
     {
+			erased = false;
             theRenderer = gameObject.GetComponent<SpriteRenderer>();
             theRenderer.color = new Color (1, 1, 1, 0); 
     }
@@ -47,9 +48,10 @@ public class EraseScript : MonoBehaviour
                 progress += delta;
                 theRenderer.color = new Color (1, 1, 1, progress/objective); 
                 // Debug.Log("Current : "+progress+"; delta : "+delta+"; objective : "+objective);
-                if (progress >= objective) {
+                if (progress >= objective&& !erased) {
                     Objective();
                     writing = false;
+					erased = true;
                 }
             }
         }
@@ -58,4 +60,11 @@ public class EraseScript : MonoBehaviour
     void Objective() {
         transform.parent.GetComponent<LoremIpsumScrolling>().WordErased();
     }
+	
+	public void Reset()
+	{
+		erased = false;
+		progress = 0;
+		theRenderer.color = new Color (1, 1, 1, 0); 
+	}
 }
