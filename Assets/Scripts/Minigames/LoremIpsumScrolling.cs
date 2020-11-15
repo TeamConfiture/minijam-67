@@ -5,8 +5,10 @@ using UnityEngine;
 public class LoremIpsumScrolling : MonoBehaviour
 {
 	int nbWordsErased = 0;
-	const int TOTAL_WORDS = 11;
+	const int TOTAL_WORDS = 10;
 	float distanceScrolled = 0;
+
+	public MGManagerScript managerScript;
     // Start is called before the first frame update
     void Start()
     {
@@ -25,6 +27,7 @@ public class LoremIpsumScrolling : MonoBehaviour
 	public void WordErased()
 	{
 		nbWordsErased++;
+		Debug.Log(nbWordsErased);
 		if(nbWordsErased == TOTAL_WORDS)
 			EndGame();
 	}
@@ -32,7 +35,7 @@ public class LoremIpsumScrolling : MonoBehaviour
 	void EndGame()
 	{
 		if(nbWordsErased == TOTAL_WORDS)
-			Debug.Log("Success!");//passer au minijeu suivant
+			managerScript.NextGame();
 		else
 			Debug.Log("Failure!");//reset le minijeu
 	}

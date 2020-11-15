@@ -25,11 +25,11 @@ public class EraseScript : MonoBehaviour
 		if (Input.GetButtonDown("Fire1")) {
             oldPos = Input.mousePosition;
             writing = true;
-            Debug.Log("Started to write");
+            //Debug.Log("Started to write");
         } else if (Input.GetButtonUp("Fire1")) {
             if (writing) {
                 writing = false;
-                Debug.Log("Stopped writing");
+                //Debug.Log("Stopped writing");
                 oldPos = Vector3.zero;
             }
         }
@@ -46,7 +46,7 @@ public class EraseScript : MonoBehaviour
                 float delta = Vector3.Distance(oldPos, newPos)*Time.deltaTime / reduceFactor;
                 progress += delta;
                 theRenderer.color = new Color (1, 1, 1, progress/objective); 
-                Debug.Log("Current : "+progress+"; delta : "+delta+"; objective : "+objective);
+                // Debug.Log("Current : "+progress+"; delta : "+delta+"; objective : "+objective);
                 if (progress >= objective) {
                     Objective();
                     writing = false;
@@ -56,6 +56,6 @@ public class EraseScript : MonoBehaviour
 	}
 
     void Objective() {
-        Debug.Log("Document signed !");
+        transform.parent.GetComponent<LoremIpsumScrolling>().WordErased();
     }
 }
