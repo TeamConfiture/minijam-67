@@ -224,8 +224,8 @@ Transform:
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 6132695}
   m_LocalRotation: {x: -0, y: -0, z: -0, w: 1}
-  m_LocalPosition: {x: -6, y: 16.53, z: 0}
-  m_LocalScale: {x: 5.328052, y: 1, z: 0}
+  m_LocalPosition: {x: -5.926, y: 16.51, z: 0}
+  m_LocalScale: {x: 5.475658, y: 1.039906, z: 0}
   m_Children: []
   m_Father: {fileID: 11335061}
   m_RootOrder: 1
@@ -256,6 +256,7 @@ GameObject:
   - component: {fileID: 11335060}
   - component: {fileID: 11335059}
   - component: {fileID: 11335058}
+  - component: {fileID: 11335062}
   m_Layer: 0
   m_Name: Text (TMP)
   m_TagString: Untagged
@@ -296,16 +297,16 @@ MonoBehaviour:
     non <i><color=grey>quam</color></i> lacus. Diam in arcu cursus euismod quis viverra
     nibh. Aliquam id diam maecenas ultricies mi eget mauris pharetra et. Vel facilisis
     volutpat est <i><color=grey>velit</color></i> egestas. Sollicitudin ac orci phasellus
-    egestas tellus rutrum tellus pellentesque.
+    egestas tellus rutrum tellus quam nulla pellentesque.
 
 
 
-    Id <i><color=grey>eu nisl</color></i>
-    nunc mi ipsum faucibus vitae. Massa tincidunt dui ut ornare lectus. Nisl nunc
-    mi ipsum faucibus vitae aliquet nec. Dictum fusce ut <i><color=grey>placerat</color></i>
+    Id <i><color=grey>eu
+    nisl</color></i> nunc mi ipsum faucibus vitae. Massa tincidunt dui ut ornare
+    lectus. Nisl nunc mi ipsum faucibus vitae aliquet nec. Dictum fusce ut <i><color=grey>placerat</color></i>
     orci nulla pellentesque dignissim. Risus viverra adipiscing at in tellus integer
     feugiat scelerisque varius. Eros donec ac odio tempor orci dapibus <i><color=grey>ultrices</color></i>
-    in. Risus feugiat in ante metus dictum at tempor commodo ullamcorper'
+    in. Risus feugiat in ante metus dictum at tempor commodo ullamcorper.'
   m_isRightToLeft: 0
   m_fontAsset: {fileID: 11400000, guid: 8f586378b4e144a9851e7b34d9b748ee, type: 2}
   m_sharedMaterial: {fileID: 2180264, guid: 8f586378b4e144a9851e7b34d9b748ee, type: 2}
@@ -449,9 +450,21 @@ RectTransform:
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
   m_AnchorMin: {x: 0.5, y: 0.5}
   m_AnchorMax: {x: 0.5, y: 0.5}
-  m_AnchoredPosition: {x: 0.08, y: -19.01}
+  m_AnchoredPosition: {x: -0, y: -20.07}
   m_SizeDelta: {x: 17.032272, y: 48}
   m_Pivot: {x: 0.5, y: 0.5}
+--- !u!114 &11335062
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 11335057}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: ec4ee215b9106fb41b8ac2fe9d30c88f, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
 --- !u!1 &75211773
 GameObject:
   m_ObjectHideFlags: 0
@@ -555,8 +568,8 @@ Transform:
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 75211773}
   m_LocalRotation: {x: -0, y: -0, z: -0, w: 1}
-  m_LocalPosition: {x: 5.747, y: 2.7, z: 0}
-  m_LocalScale: {x: 5.676895, y: 1, z: 0}
+  m_LocalPosition: {x: 5.747, y: 2.631, z: 0}
+  m_LocalScale: {x: 5.676895, y: 1.1380825, z: 0}
   m_Children: []
   m_Father: {fileID: 11335061}
   m_RootOrder: 4
@@ -1047,8 +1060,8 @@ Transform:
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 272175706}
   m_LocalRotation: {x: -0, y: -0, z: -0, w: 1}
-  m_LocalPosition: {x: -2.852, y: 8.4, z: 0}
-  m_LocalScale: {x: 4.542797, y: 1, z: 0}
+  m_LocalPosition: {x: -2.923, y: 8.4, z: 0}
+  m_LocalScale: {x: 4.6840506, y: 1, z: 0}
   m_Children: []
   m_Father: {fileID: 11335061}
   m_RootOrder: 3
@@ -1170,8 +1183,8 @@ Transform:
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 379180814}
   m_LocalRotation: {x: -0, y: -0, z: -0, w: 1}
-  m_LocalPosition: {x: -2.32, y: -5.41, z: 0}
-  m_LocalScale: {x: 1.8091508, y: 1, z: 0}
+  m_LocalPosition: {x: -2.3992, y: -5.41, z: 0}
+  m_LocalScale: {x: 1.9675088, y: 1, z: 0}
   m_Children: []
   m_Father: {fileID: 11335061}
   m_RootOrder: 6
@@ -1622,8 +1635,8 @@ Transform:
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 1992602964}
   m_LocalRotation: {x: -0, y: -0, z: -0, w: 1}
-  m_LocalPosition: {x: 6.684, y: -14.5, z: 0}
-  m_LocalScale: {x: 3.8374712, y: 1, z: 0}
+  m_LocalPosition: {x: 6.6492, y: -14.5647, z: 0}
+  m_LocalScale: {x: 3.907133, y: 1.1293755, z: 0}
   m_Children: []
   m_Father: {fileID: 11335061}
   m_RootOrder: 8
