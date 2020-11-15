@@ -193,6 +193,11 @@ PrefabInstance:
       propertyPath: m_Name
       value: JeuCasier
       objectReference: {fileID: 0}
+    - target: {fileID: 9035078115857286053, guid: a97c394f6e8b403499a2ce22f76fb882,
+        type: 3}
+      propertyPath: m_IsActive
+      value: 0
+      objectReference: {fileID: 0}
     m_RemovedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: a97c394f6e8b403499a2ce22f76fb882, type: 3}
 --- !u!4 &174726200 stripped
@@ -447,6 +452,11 @@ PrefabInstance:
         type: 3}
       propertyPath: m_Name
       value: LoremIpsumMinigame
+      objectReference: {fileID: 0}
+    - target: {fileID: 1440598355215658161, guid: 37e38d809090e894cbb5a66d5417c3a0,
+        type: 3}
+      propertyPath: m_IsActive
+      value: 0
       objectReference: {fileID: 0}
     - target: {fileID: 1440598355215658162, guid: 37e38d809090e894cbb5a66d5417c3a0,
         type: 3}
@@ -855,6 +865,11 @@ PrefabInstance:
         type: 3}
       propertyPath: m_Name
       value: CheckBoxes
+      objectReference: {fileID: 0}
+    - target: {fileID: 1908144503754005716, guid: d51a71700b688439d974a51ca5d2a19b,
+        type: 3}
+      propertyPath: m_IsActive
+      value: 0
       objectReference: {fileID: 0}
     - target: {fileID: 1908144503769647436, guid: d51a71700b688439d974a51ca5d2a19b,
         type: 3}
