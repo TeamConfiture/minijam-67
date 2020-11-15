@@ -171,7 +171,7 @@ PrefabInstance:
     - target: {fileID: 1869841930629389303, guid: a97c394f6e8b403499a2ce22f76fb882,
         type: 3}
       propertyPath: m_RootOrder
-      value: 1
+      value: 0
       objectReference: {fileID: 0}
     - target: {fileID: 1869841930629389303, guid: a97c394f6e8b403499a2ce22f76fb882,
         type: 3}
@@ -193,6 +193,11 @@ PrefabInstance:
       propertyPath: m_Name
       value: JeuCasier
       objectReference: {fileID: 0}
+    - target: {fileID: 9035078115857286053, guid: a97c394f6e8b403499a2ce22f76fb882,
+        type: 3}
+      propertyPath: m_IsActive
+      value: 1
+      objectReference: {fileID: 0}
     m_RemovedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: a97c394f6e8b403499a2ce22f76fb882, type: 3}
 --- !u!4 &174726200 stripped
@@ -212,6 +217,11 @@ PrefabInstance:
         type: 3}
       propertyPath: m_Name
       value: Contract
+      objectReference: {fileID: 0}
+    - target: {fileID: 5525237406483463873, guid: be86f196dab67d054b88699ff488d9e1,
+        type: 3}
+      propertyPath: m_IsActive
+      value: 1
       objectReference: {fileID: 0}
     - target: {fileID: 5525237406483463879, guid: be86f196dab67d054b88699ff488d9e1,
         type: 3}
@@ -447,6 +457,11 @@ PrefabInstance:
         type: 3}
       propertyPath: m_Name
       value: LoremIpsumMinigame
+      objectReference: {fileID: 0}
+    - target: {fileID: 1440598355215658161, guid: 37e38d809090e894cbb5a66d5417c3a0,
+        type: 3}
+      propertyPath: m_IsActive
+      value: 1
       objectReference: {fileID: 0}
     - target: {fileID: 1440598355215658162, guid: 37e38d809090e894cbb5a66d5417c3a0,
         type: 3}
@@ -766,6 +781,11 @@ PrefabInstance:
       propertyPath: manager
       value: 
       objectReference: {fileID: 1765971148}
+    - target: {fileID: 1908144502057556356, guid: d51a71700b688439d974a51ca5d2a19b,
+        type: 3}
+      propertyPath: m_ScaleFactor
+      value: 1
+      objectReference: {fileID: 0}
     - target: {fileID: 1908144502165550728, guid: d51a71700b688439d974a51ca5d2a19b,
         type: 3}
       propertyPath: manager
@@ -834,7 +854,7 @@ PrefabInstance:
     - target: {fileID: 1908144503754005707, guid: d51a71700b688439d974a51ca5d2a19b,
         type: 3}
       propertyPath: m_RootOrder
-      value: 2
+      value: 1
       objectReference: {fileID: 0}
     - target: {fileID: 1908144503754005707, guid: d51a71700b688439d974a51ca5d2a19b,
         type: 3}
@@ -855,6 +875,11 @@ PrefabInstance:
         type: 3}
       propertyPath: m_Name
       value: CheckBoxes
+      objectReference: {fileID: 0}
+    - target: {fileID: 1908144503754005716, guid: d51a71700b688439d974a51ca5d2a19b,
+        type: 3}
+      propertyPath: m_IsActive
+      value: 1
       objectReference: {fileID: 0}
     - target: {fileID: 1908144503769647436, guid: d51a71700b688439d974a51ca5d2a19b,
         type: 3}
