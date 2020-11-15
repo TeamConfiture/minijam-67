@@ -19,8 +19,8 @@ public class LoremIpsumScrolling : MonoBehaviour
     void Update()
     {
         transform.position = transform.position + new Vector3(0,1.2f, 0)*Time.deltaTime;
-		distanceScrolled += 1.2f*Time.deltaTime;
-		if(distanceScrolled >= 48.0f)// hauteur du TextMeshPro, hardcodée (je sais c'est pas beau)
+		distanceScrolled += 1.4f*Time.deltaTime;
+		if(distanceScrolled >= 33.0f)// hauteur du texte, hardcodée (je sais c'est pas beau)
 			EndGame();
     }
 	
@@ -37,6 +37,14 @@ public class LoremIpsumScrolling : MonoBehaviour
 		if(nbWordsErased == TOTAL_WORDS)
 			managerScript.NextGame();
 		else
-			Debug.Log("Failure!");//reset le minijeu
+		{
+			transform.position = new Vector3(0,0,0);
+			Component[] words = GetComponentsInChildren<EraseScript>();
+			foreach(EraseScript word in words)
+				word.Reset();
+				
+			nbWordsErased = 0;
+			distanceScrolled = 0;
+		}
 	}
 }
