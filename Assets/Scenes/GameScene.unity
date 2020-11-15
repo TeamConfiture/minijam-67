@@ -781,6 +781,11 @@ PrefabInstance:
       propertyPath: manager
       value: 
       objectReference: {fileID: 1765971148}
+    - target: {fileID: 1908144502057556356, guid: d51a71700b688439d974a51ca5d2a19b,
+        type: 3}
+      propertyPath: m_ScaleFactor
+      value: 1
+      objectReference: {fileID: 0}
     - target: {fileID: 1908144502165550728, guid: d51a71700b688439d974a51ca5d2a19b,
         type: 3}
       propertyPath: manager
