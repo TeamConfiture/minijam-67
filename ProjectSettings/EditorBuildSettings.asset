@@ -9,6 +9,9 @@ EditorBuildSettings:
     path: Assets/Scenes/IntroCutScenee.unity
     guid: e6ea7db41ed02e04da8d0be765a8862b
   - enabled: 1
+    path: Assets/Scenes/IntroCutScene.unity
+    guid: 84add41b1d7553d49a3107e4df85edf2
+  - enabled: 1
     path: Assets/Scenes/MainMenu.unity
     guid: 177389115291ae54ab7f6350a431722b
   - enabled: 1
@@ -17,9 +20,6 @@ EditorBuildSettings:
   - enabled: 1
     path: Assets/Scenes/WinScene.unity
     guid: 497adc50b8081ea43a2977940b7d1ca4
-  - enabled: 1
-    path: Assets/Scenes/IntroCutScene.unity
-    guid: 84add41b1d7553d49a3107e4df85edf2
   - enabled: 1
     path: Assets/Scenes/OutroCutScene.unity
     guid: 2aadf5dda8801194b95c816dd1232102
