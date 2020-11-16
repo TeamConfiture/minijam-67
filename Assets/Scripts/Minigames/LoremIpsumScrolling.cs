@@ -9,12 +9,18 @@ public class LoremIpsumScrolling : MonoBehaviour
 	float distanceScrolled = 0;
 
 	public MGManagerScript managerScript;
+	public Texture2D cursorTexture;
+    public CursorMode cursorMode = CursorMode.Auto;
+    public Vector2 hotSpot = Vector2.zero;
     // Start is called before the first frame update
     void Start()
     {
-        
     }
-
+	
+	void OnEnable()
+	{
+			Cursor.SetCursor(cursorTexture, hotSpot, cursorMode);
+	}
     // Update is called once per frame
     void Update()
     {
@@ -28,14 +34,16 @@ public class LoremIpsumScrolling : MonoBehaviour
 	{
 		nbWordsErased++;
 		Debug.Log(nbWordsErased);
-		if(nbWordsErased == TOTAL_WORDS)
+		if(nbWordsErased >= TOTAL_WORDS)
 			EndGame();
 	}
 	
 	void EndGame()
 	{
-		if(nbWordsErased == TOTAL_WORDS)
+		if(nbWordsErased >= TOTAL_WORDS)
+		{
 			managerScript.NextGame();
+		}
 		else
 		{
 			transform.position = new Vector3(0,0,0);
@@ -46,5 +54,10 @@ public class LoremIpsumScrolling : MonoBehaviour
 			nbWordsErased = 0;
 			distanceScrolled = 0;
 		}
+	}
+	
+	void OnDisable()
+	{
+			Cursor.SetCursor(null, Vector2.zero, cursorMode);
 	}
 }
